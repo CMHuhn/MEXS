@@ -55,6 +55,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DataFeed.cs" />
+    <Compile Include="DataFeedAdapter.cs" />
+    <Compile Include="MEXSController.cs" />
+    <Compile Include="Transaction.cs" />
+    <Compile Include="TransactionDatabase.cs" />
+    <Compile Include="TransactionGenerator.cs" />
+    <Compile Include="UIHandler.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

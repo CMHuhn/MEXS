@@ -5,8 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MEXS"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="Money Exchange System" Height="350" Width="801.042">
+    <Grid Loaded="windowLoad">
+        <TextBox x:Name="sourceAmountBox" HorizontalAlignment="Left" Height="23" Margin="233,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="sourceAmountLabel" Content="Source Currency Amount" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="86,49,0,0"/>
+        <TextBox x:Name="sourceDenominationBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="233,24,0,0"/>
+        <Label x:Name="sourceDenominationLabel" Content="Source Currency Denomination" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="53,21,0,0"/>
+        <TextBox x:Name="targetDenominationBox" HorizontalAlignment="Left" Height="23" Margin="579,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="targetDenominationLabel" Content="Target Currency Denomination" HorizontalAlignment="Left" Margin="402,21,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="targetAmountDataLabel" Content="" HorizontalAlignment="Left" Margin="579,49,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="targetAmountLabel" Content="Target Currency Amount" HorizontalAlignment="Left" Margin="435,49,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="customerNameLabel" Content="Customer Name" HorizontalAlignment="Left" Margin="132,113,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="customerNameBox" HorizontalAlignment="Left" Height="24" Margin="233,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="passportNumberLabel" Content="Passport Number" HorizontalAlignment="Left" Margin="126,171,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="passportNumberBox" HorizontalAlignment="Left" Height="23" Margin="233,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="passportCountryLabel" Content="Passport Country" HorizontalAlignment="Left" Margin="126,202,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="passportCountryBox" HorizontalAlignment="Left" Height="23" Margin="233,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="exchangeRateDataLabel" Content="" HorizontalAlignment="Left" Margin="579,113,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="exchangeRateLabel" Content="Exchange Rate" HorizontalAlignment="Left" Margin="487,113,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="commissionDataLabel" Content="" HorizontalAlignment="Left" Margin="579,180,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="commissionLabel" Content="Commission" HorizontalAlignment="Left" Margin="499,180,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="confirmButton" Content="Confirm Exchange" HorizontalAlignment="Left" Margin="620,259,0,0" VerticalAlignment="Top" Height="40" Width="125" Click="confirmClick"/>
+        <Button x:Name="estimateButton" Content="Get Estimate" HorizontalAlignment="Left" Margin="435,259,0,0" VerticalAlignment="Top" Width="125" Height="40" Click="estimateClick"/>
+        <Button x:Name="setCommissionButton" Content="Set Commission" HorizontalAlignment="Left" Margin="228,259,0,0" VerticalAlignment="Top" Width="125" Height="40" Click="setCommissionClick"/>
+        <Button x:Name="reportButton" Content="Pull Report" HorizontalAlignment="Left" Margin="50,259,0,0" VerticalAlignment="Top" Width="125" Height="40" Click="reportClick"/>
+
     </Grid>
 </Window>
